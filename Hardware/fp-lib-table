@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name ESP8266)(type KiCad)(uri C:/Users/Hardt/Development/ESP01-WS2812B/Hardware/esp01-ws2812b-breakout/esp_kicad_library/ESP8266.pretty)(options "")(descr "ESP8266 from the custom library"))
+  (lib (name ESP8266)(type KiCad)(uri C:/Users/Hardt/Development/ESP01-WS2812B/Hardware/esp_kicad_library/ESP8266.pretty)(options "")(descr "ESP8266 from the custom library"))
 )

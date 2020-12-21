@@ -1,4 +1,2 @@
 # Readme
-Template for a KiCad project containing hardware and firmware development.
-
-Original source for project structure and tips: https://medium.com/inventhub/better-manage-kicad-projects-using-git-8d06e1310af8
+This repo documents the development of a small ESP01 breakout board to support controlling two WS2812B LED strips and a Dallas DS18B20 temperature sensor. This allows for easy integration with HomeAssistant through ESPHome.

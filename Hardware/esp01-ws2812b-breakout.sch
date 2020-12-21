@@ -230,7 +230,7 @@ U 1 1 5FE2D106
 P 1150 1350
 F 0 "J1" H 1068 1025 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 1068 1116 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1150 1350 50  0001 C CNN
+F 2 "Custom Terminals:0102-blue-terminal" H 1150 1350 50  0001 C CNN
 F 3 "~" H 1150 1350 50  0001 C CNN
 	1    1150 1350
 	-1   0    0    1   
@@ -301,7 +301,7 @@ U 1 1 5FE369E1
 P 6300 3000
 F 0 "J2" H 6380 2992 50  0000 L CNN
 F 1 "Screw_Terminal_01x04" H 6380 2901 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6300 3000 50  0001 C CNN
+F 2 "Custom Terminals:0104-blue-terminal" H 6300 3000 50  0001 C CNN
 F 3 "~" H 6300 3000 50  0001 C CNN
 	1    6300 3000
 	1    0    0    -1  
@@ -362,7 +362,7 @@ U 1 1 5FE1865D
 P 1700 3050
 F 0 "Q1" V 1949 3050 50  0000 C CNN
 F 1 "IRFS4127" V 2040 3050 50  0000 C CNN
-F 2 "ESP8266:SOT-23_Handsoldering_DS-REVERSED" H 1900 2975 50  0001 L CIN
+F 2 "Custom Mosfets:SOT-23_DS-REVERSED" H 1900 2975 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irfs4127pbf.pdf?fileId=5546d462533600a401535636ee7b2192" H 1700 3050 50  0001 L CNN
 	1    1700 3050
 	0    1    1    0   
@@ -444,7 +444,7 @@ U 1 1 5FE26590
 P 3950 3050
 F 0 "Q2" V 4199 3050 50  0000 C CNN
 F 1 "IRFS4127" V 4290 3050 50  0000 C CNN
-F 2 "ESP8266:SOT-23_Handsoldering_DS-REVERSED" H 4150 2975 50  0001 L CIN
+F 2 "Custom Mosfets:SOT-23_DS-REVERSED" H 4150 2975 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irfs4127pbf.pdf?fileId=5546d462533600a401535636ee7b2192" H 3950 3050 50  0001 L CNN
 	1    3950 3050
 	0    1    1    0   
@@ -611,4 +611,32 @@ Wire Wire Line
 Connection ~ 8350 3000
 Wire Wire Line
 	7950 3000 7850 3000
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FE31388
+P 750 4350
+F 0 "H1" H 850 4396 50  0000 L CNN
+F 1 "MountingHole" H 850 4305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 750 4350 50  0001 C CNN
+F 3 "~" H 750 4350 50  0001 C CNN
+	1    750  4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FE31DB5
+P 750 4650
+F 0 "H2" H 850 4696 50  0000 L CNN
+F 1 "MountingHole" H 850 4605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 750 4650 50  0001 C CNN
+F 3 "~" H 750 4650 50  0001 C CNN
+	1    750  4650
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2750 3750 2750 5350
+Wire Notes Line
+	500  5350 2750 5350
+Text Notes 550  5300 0    50   ~ 0
+Mounting holes
 $EndSCHEMATC

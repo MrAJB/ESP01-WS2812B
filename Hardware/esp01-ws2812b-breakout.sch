@@ -87,23 +87,23 @@ Wire Wire Line
 Wire Wire Line
 	3400 1100 3600 1100
 $Comp
-L Device:C C2
+L Device:C C3
 U 1 1 5FDF7377
 P 4400 1250
-F 0 "C2" H 4515 1296 50  0000 L CNN
+F 0 "C3" H 4515 1296 50  0000 L CNN
 F 1 "10uF" H 4515 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4438 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4438 1100 50  0001 C CNN
 F 3 "~" H 4400 1250 50  0001 C CNN
 	1    4400 1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L Device:C C2
 U 1 1 5FDF6DA0
 P 3400 1250
-F 0 "C1" H 3515 1296 50  0000 L CNN
+F 0 "C2" H 3515 1296 50  0000 L CNN
 F 1 "10uF" H 3515 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3438 1100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3438 1100 50  0001 C CNN
 F 3 "~" H 3400 1250 50  0001 C CNN
 	1    3400 1250
 	1    0    0    -1  
@@ -605,10 +605,10 @@ Wire Notes Line
 Text Notes 550  5300 0    50   ~ 0
 Mounting holes
 $Comp
-L Device:Fuse F?
+L Device:Fuse F1
 U 1 1 5FE51D8D
 P 1350 1250
-F 0 "F?" V 1153 1250 50  0000 C CNN
+F 0 "F1" V 1153 1250 50  0000 C CNN
 F 1 "15A" V 1244 1250 50  0000 C CNN
 F 2 "" V 1280 1250 50  0001 C CNN
 F 3 "~" H 1350 1250 50  0001 C CNN
@@ -620,12 +620,12 @@ Wire Notes Line
 Wire Notes Line
 	2750 3200 2750 500 
 $Comp
-L Device:C C?
+L Device:C C4
 U 1 1 5FE5DACE
 P 8100 1750
-F 0 "C?" V 7848 1750 50  0000 C CNN
+F 0 "C4" V 7848 1750 50  0000 C CNN
 F 1 "1uF" V 7939 1750 50  0000 C CNN
-F 2 "" H 8138 1600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8138 1600 50  0001 C CNN
 F 3 "~" H 8100 1750 50  0001 C CNN
 	1    8100 1750
 	0    1    1    0   
@@ -642,12 +642,12 @@ Connection ~ 9500 950
 Wire Wire Line
 	9500 950  9600 950 
 $Comp
-L Device:CP C?
+L Device:CP C1
 U 1 1 5FE71E53
 P 1650 1400
-F 0 "C?" H 1768 1446 50  0000 L CNN
+F 0 "C1" H 1768 1446 50  0000 L CNN
 F 1 "100uF" H 1768 1355 50  0000 L CNN
-F 2 "" H 1688 1250 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1688 1250 50  0001 C CNN
 F 3 "~" H 1650 1400 50  0001 C CNN
 	1    1650 1400
 	1    0    0    -1  

@@ -533,16 +533,14 @@ $EndComp
 $Comp
 L Device:R R5
 U 1 1 5FE503AD
-P 8100 3000
-F 0 "R5" V 8307 3000 50  0000 C CNN
-F 1 "10K" V 8216 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8030 3000 50  0001 C CNN
-F 3 "~" H 8100 3000 50  0001 C CNN
-	1    8100 3000
+P 8100 2900
+F 0 "R5" V 8307 2900 50  0000 C CNN
+F 1 "10K" V 8216 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8030 2900 50  0001 C CNN
+F 3 "~" H 8100 2900 50  0001 C CNN
+	1    8100 2900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8350 3000 8450 3000
 $Comp
 L power:+3.3V #PWR015
 U 1 1 5FE478BC
@@ -570,14 +568,6 @@ Text Notes 7300 3700 0    50   ~ 0
 (Optional) interface to interact with GPIO0\n10k pullup ensures the ESP01 boots in correct mode
 Text Notes 9550 3700 0    50   ~ 0
 DS18B20 temperature sensor
-Wire Wire Line
-	8350 3000 8350 2900
-Connection ~ 8350 2900
-Wire Wire Line
-	8350 3000 8250 3000
-Connection ~ 8350 3000
-Wire Wire Line
-	7950 3000 7850 3000
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5FE31388
@@ -674,4 +664,14 @@ Connection ~ 2250 1250
 Wire Wire Line
 	1650 1250 1500 1250
 Connection ~ 1650 1250
+Wire Wire Line
+	7850 3000 7950 3000
+Wire Wire Line
+	8350 2900 8250 2900
+Connection ~ 8350 2900
+Wire Wire Line
+	7950 2900 7950 3000
+Connection ~ 7950 3000
+Wire Wire Line
+	7950 3000 8450 3000
 $EndSCHEMATC

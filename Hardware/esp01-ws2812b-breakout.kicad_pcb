@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.8)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
     (user_trace_width 1.5)
@@ -65,8 +65,8 @@
     (grid_origin 144.78 79.248)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x010fc_ffffffff)
-      (usegerberextensions false)
+      (layerselection 0x010f0_ffffffff)
+      (usegerberextensions true)
       (usegerberattributes true)
       (usegerberadvancedattributes true)
       (creategerberjobfile true)
@@ -88,9 +88,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "production/"))
   )
 
   (net 0 "")
@@ -1239,7 +1239,7 @@
   (segment (start 174.752 84.679) (end 180.116 90.043) (width 1.5) (layer F.Cu) (net 11))
   (segment (start 174.752 83.312) (end 174.752 84.679) (width 1.5) (layer F.Cu) (net 11))
 
-  (zone (net 2) (net_name GND) (layer F.Cu) (tstamp 5FEB6C46) (hatch edge 0.508)
+  (zone (net 2) (net_name GND) (layer F.Cu) (tstamp 616042C8) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))

@@ -326,7 +326,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 1350 2550 1350
 $Comp
-L Transistor_FET:IRFS4127 Q1
+L esp01-ws2812b-breakout-rescue:IRFS4127-Transistor_FET Q1
 U 1 1 5FE1865D
 P 1700 3050
 F 0 "Q1" V 1949 3050 50  0000 C CNN
@@ -408,7 +408,7 @@ Connection ~ 2000 3150
 Wire Wire Line
 	2000 3150 2100 3150
 $Comp
-L Transistor_FET:IRFS4127 Q2
+L esp01-ws2812b-breakout-rescue:IRFS4127-Transistor_FET Q2
 U 1 1 5FE26590
 P 3950 3050
 F 0 "Q2" V 4199 3050 50  0000 C CNN

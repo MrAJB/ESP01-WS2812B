@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ESP_Library)(type Legacy)(uri ${KIPRJMOD}/esp_kicad_library/ESP8266.lib)(options "")(descr "ESP8266 Boards"))
+  (lib (name esp01-ws2812b-breakout-rescue)(type Legacy)(uri ${KIPRJMOD}/esp01-ws2812b-breakout-rescue.lib)(options "")(descr ""))
 )

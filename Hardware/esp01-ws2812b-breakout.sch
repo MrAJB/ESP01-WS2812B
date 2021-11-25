@@ -24,8 +24,6 @@ F 3 "" H 2550 1350 50  0001 C CNN
 	1    2550 1350
 	1    0    0    -1  
 $EndComp
-Text Notes 550  2100 0    50   ~ 0
-Power supply\n- 100uF cap for general decoupling/smoothening
 Connection ~ 4400 1100
 Wire Wire Line
 	4400 1100 4700 1100
@@ -119,8 +117,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 3900 1100 50  0001 C CNN
 	1    3900 1100
 	1    0    0    -1  
 $EndComp
-Text Notes 2800 2100 0    50   ~ 0
-Power conversion for MCU\n- Capacitors based on datasheet
 $Comp
 L power:+3.3V #PWR014
 U 1 1 5FE0A8F9
@@ -157,8 +153,6 @@ Text GLabel 9050 1050 2    50   Input ~ 0
 DALLAS
 Text GLabel 7150 950  0    50   Input ~ 0
 LED1_3V3
-Text GLabel 9050 1250 2    50   Input ~ 0
-LED2_3V3
 Wire Wire Line
 	9050 950  9500 950 
 Text Notes 5050 2100 0    50   ~ 0
@@ -211,8 +205,6 @@ Wire Notes Line
 	600  3750 11100 3750
 Text GLabel 5850 2900 0    50   Input ~ 0
 LED1_5V
-Text GLabel 5850 3000 0    50   Input ~ 0
-LED2_5V
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5FE2D106
@@ -325,172 +317,8 @@ Wire Wire Line
 	2250 1250 2550 1250
 Wire Wire Line
 	2250 1350 2550 1350
-$Comp
-L esp01-ws2812b-breakout-rescue:IRFS4127-Transistor_FET Q1
-U 1 1 5FE1865D
-P 1700 3050
-F 0 "Q1" V 1949 3050 50  0000 C CNN
-F 1 "IRFS4127" V 2040 3050 50  0000 C CNN
-F 2 "Custom Mosfets:SOT-23_DS-REVERSED" H 1900 2975 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/irfs4127pbf.pdf?fileId=5546d462533600a401535636ee7b2192" H 1700 3050 50  0001 L CNN
-	1    1700 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR01
-U 1 1 5FE19DD9
-P 1400 2650
-F 0 "#PWR01" H 1400 2500 50  0001 C CNN
-F 1 "+3.3V" H 1415 2823 50  0000 C CNN
-F 2 "" H 1400 2650 50  0001 C CNN
-F 3 "" H 1400 2650 50  0001 C CNN
-	1    1400 2650
-	1    0    0    -1  
-$EndComp
-Text GLabel 1300 3150 0    50   Input ~ 0
-LED1_3V3
-Text GLabel 2100 3150 2    50   Input ~ 0
-LED1_5V
-$Comp
-L power:+5V #PWR02
-U 1 1 5FE1B2F7
-P 2000 2650
-F 0 "#PWR02" H 2000 2500 50  0001 C CNN
-F 1 "+5V" H 2015 2823 50  0000 C CNN
-F 2 "" H 2000 2650 50  0001 C CNN
-F 3 "" H 2000 2650 50  0001 C CNN
-	1    2000 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5FE1BA2B
-P 1400 2900
-F 0 "R1" H 1470 2946 50  0000 L CNN
-F 1 "10K" H 1470 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1330 2900 50  0001 C CNN
-F 3 "~" H 1400 2900 50  0001 C CNN
-	1    1400 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5FE1C32E
-P 2000 2900
-F 0 "R2" H 2070 2946 50  0000 L CNN
-F 1 "10K" H 2070 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1930 2900 50  0001 C CNN
-F 3 "~" H 2000 2900 50  0001 C CNN
-	1    2000 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 2650 1700 2650
-Wire Wire Line
-	1700 2650 1700 2850
-Wire Wire Line
-	1500 3150 1400 3150
-Wire Wire Line
-	1400 3050 1400 3150
-Connection ~ 1400 3150
-Wire Wire Line
-	1400 3150 1300 3150
-Wire Wire Line
-	1400 2750 1400 2650
-Connection ~ 1400 2650
-Wire Wire Line
-	2000 2750 2000 2650
-Wire Wire Line
-	1900 3150 2000 3150
-Wire Wire Line
-	2000 3050 2000 3150
-Connection ~ 2000 3150
-Wire Wire Line
-	2000 3150 2100 3150
-$Comp
-L esp01-ws2812b-breakout-rescue:IRFS4127-Transistor_FET Q2
-U 1 1 5FE26590
-P 3950 3050
-F 0 "Q2" V 4199 3050 50  0000 C CNN
-F 1 "IRFS4127" V 4290 3050 50  0000 C CNN
-F 2 "Custom Mosfets:SOT-23_DS-REVERSED" H 4150 2975 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/irfs4127pbf.pdf?fileId=5546d462533600a401535636ee7b2192" H 3950 3050 50  0001 L CNN
-	1    3950 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR07
-U 1 1 5FE26596
-P 3650 2650
-F 0 "#PWR07" H 3650 2500 50  0001 C CNN
-F 1 "+3.3V" H 3665 2823 50  0000 C CNN
-F 2 "" H 3650 2650 50  0001 C CNN
-F 3 "" H 3650 2650 50  0001 C CNN
-	1    3650 2650
-	1    0    0    -1  
-$EndComp
-Text GLabel 3550 3150 0    50   Input ~ 0
-LED2_3V3
-Text GLabel 4350 3150 2    50   Input ~ 0
-LED2_5V
-$Comp
-L power:+5V #PWR09
-U 1 1 5FE2659E
-P 4250 2650
-F 0 "#PWR09" H 4250 2500 50  0001 C CNN
-F 1 "+5V" H 4265 2823 50  0000 C CNN
-F 2 "" H 4250 2650 50  0001 C CNN
-F 3 "" H 4250 2650 50  0001 C CNN
-	1    4250 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5FE265A4
-P 3650 2900
-F 0 "R3" H 3720 2946 50  0000 L CNN
-F 1 "10K" H 3720 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3580 2900 50  0001 C CNN
-F 3 "~" H 3650 2900 50  0001 C CNN
-	1    3650 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5FE265AA
-P 4250 2900
-F 0 "R4" H 4320 2946 50  0000 L CNN
-F 1 "10K" H 4320 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4180 2900 50  0001 C CNN
-F 3 "~" H 4250 2900 50  0001 C CNN
-	1    4250 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 2650 3950 2650
-Wire Wire Line
-	3950 2650 3950 2850
-Wire Wire Line
-	3750 3150 3650 3150
-Wire Wire Line
-	3650 3050 3650 3150
-Connection ~ 3650 3150
-Wire Wire Line
-	3650 3150 3550 3150
-Wire Wire Line
-	3650 2750 3650 2650
-Connection ~ 3650 2650
-Wire Wire Line
-	4250 2750 4250 2650
-Wire Wire Line
-	4150 3150 4250 3150
-Wire Wire Line
-	4250 3050 4250 3150
-Connection ~ 4250 3150
-Wire Wire Line
-	4250 3150 4350 3150
 Text Notes 550  3700 0    50   ~ 0
-Level shifter for LED data pin 1 and 2 \n- Design is based on: https://www.nxp.com/docs/en/application-note/AN10441.pdf\n- Note that the actual transistor is picked at random, for this PCB, a SI2300DS is used
+Level shifter for LED data pin 1 and 2 \n- Design is based on: https://www.nxp.com/docs/en/application-note/AN10441.pdf\n- Note that the actual transistor is picked at random, for this PCB, a SI2300DS is used\n- The 470 ohm resistor acts to reduce noise in the data line
 Wire Notes Line
 	5000 3750 5000 500 
 $Comp
@@ -508,64 +336,10 @@ Text GLabel 9050 1150 2    50   Input ~ 0
 GPIO0
 Wire Notes Line
 	7250 2150 7250 3750
-$Comp
-L Connector:Conn_01x03_Male J3
-U 1 1 5FE4468D
-P 8650 3000
-F 0 "J3" H 8622 2932 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 8622 3023 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8650 3000 50  0001 C CNN
-F 3 "~" H 8650 3000 50  0001 C CNN
-	1    8650 3000
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR016
-U 1 1 5FE462D0
-P 8350 3100
-F 0 "#PWR016" H 8350 2850 50  0001 C CNN
-F 1 "GND" H 8355 2927 50  0000 C CNN
-F 2 "" H 8350 3100 50  0001 C CNN
-F 3 "" H 8350 3100 50  0001 C CNN
-	1    8350 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5FE503AD
-P 8100 2900
-F 0 "R5" V 8307 2900 50  0000 C CNN
-F 1 "10K" V 8216 2900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8030 2900 50  0001 C CNN
-F 3 "~" H 8100 2900 50  0001 C CNN
-	1    8100 2900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR015
-U 1 1 5FE478BC
-P 8350 2900
-F 0 "#PWR015" H 8350 2750 50  0001 C CNN
-F 1 "+3.3V" H 8365 3073 50  0000 C CNN
-F 2 "" H 8350 2900 50  0001 C CNN
-F 3 "" H 8350 2900 50  0001 C CNN
-	1    8350 2900
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	600  2150 11100 2150
-Wire Wire Line
-	8350 2900 8450 2900
-Wire Wire Line
-	8350 3100 8450 3100
-Text GLabel 7850 3000 0    50   Input ~ 0
-GPIO0
 Wire Notes Line
 	9500 2150 9500 3750
 Text Notes 5050 3700 0    50   ~ 0
 LED connection terminal
-Text Notes 7300 3700 0    50   ~ 0
-(Optional) interface to interact with GPIO0\n10k pullup ensures the ESP01 boots in correct mode
 Text Notes 9550 3700 0    50   ~ 0
 DS18B20 temperature sensor
 $Comp
@@ -607,8 +381,6 @@ F 3 "~" H 1350 1250 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	2750 5350 2750 3750
-Wire Notes Line
-	2750 3200 2750 500 
 $Comp
 L Device:C C4
 U 1 1 5FE5DACE
@@ -665,13 +437,169 @@ Wire Wire Line
 	1650 1250 1500 1250
 Connection ~ 1650 1250
 Wire Wire Line
-	7850 3000 7950 3000
-Wire Wire Line
-	8350 2900 8250 2900
-Connection ~ 8350 2900
-Wire Wire Line
-	7950 2900 7950 3000
+	7950 3000 8450 3000
 Connection ~ 7950 3000
 Wire Wire Line
-	7950 3000 8450 3000
+	7950 2900 7950 3000
+Connection ~ 8350 2900
+Wire Wire Line
+	8350 2900 8250 2900
+Wire Wire Line
+	7850 3000 7950 3000
+Text Notes 7300 3700 0    50   ~ 0
+(Optional) interface to interact with GPIO0\n10k pullup ensures the ESP01 boots in correct mode
+Text GLabel 7850 3000 0    50   Input ~ 0
+GPIO0
+Wire Wire Line
+	8350 3100 8450 3100
+Wire Wire Line
+	8350 2900 8450 2900
+$Comp
+L power:+3.3V #PWR015
+U 1 1 5FE478BC
+P 8350 2900
+F 0 "#PWR015" H 8350 2750 50  0001 C CNN
+F 1 "+3.3V" H 8365 3073 50  0000 C CNN
+F 2 "" H 8350 2900 50  0001 C CNN
+F 3 "" H 8350 2900 50  0001 C CNN
+	1    8350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FE503AD
+P 8100 2900
+F 0 "R5" V 8307 2900 50  0000 C CNN
+F 1 "10K" V 8216 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8030 2900 50  0001 C CNN
+F 3 "~" H 8100 2900 50  0001 C CNN
+	1    8100 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5FE462D0
+P 8350 3100
+F 0 "#PWR016" H 8350 2850 50  0001 C CNN
+F 1 "GND" H 8355 2927 50  0000 C CNN
+F 2 "" H 8350 3100 50  0001 C CNN
+F 3 "" H 8350 3100 50  0001 C CNN
+	1    8350 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5FE4468D
+P 8650 3000
+F 0 "J3" H 8622 2932 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 8622 3023 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8650 3000 50  0001 C CNN
+F 3 "~" H 8650 3000 50  0001 C CNN
+	1    8650 3000
+	-1   0    0    1   
+$EndComp
+NoConn ~ 9050 1250
+Wire Wire Line
+	3300 3000 3500 3000
+Wire Wire Line
+	2800 3000 3000 3000
+$Comp
+L Device:R R3
+U 1 1 61A05259
+P 3150 3000
+F 0 "R3" V 3250 2950 50  0000 L CNN
+F 1 "470" V 3350 2950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3080 3000 50  0001 C CNN
+F 3 "~" H 3150 3000 50  0001 C CNN
+	1    3150 3000
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	2750 500  2750 2150
+Wire Notes Line
+	600  2150 11100 2150
+Connection ~ 2800 3000
+Wire Wire Line
+	2800 2900 2800 3000
+Wire Wire Line
+	2700 3000 2800 3000
+Wire Wire Line
+	2800 2600 2800 2500
+Connection ~ 2200 2500
+Wire Wire Line
+	2200 2600 2200 2500
+Wire Wire Line
+	2200 3000 2100 3000
+Connection ~ 2200 3000
+Wire Wire Line
+	2200 2900 2200 3000
+Wire Wire Line
+	2300 3000 2200 3000
+Wire Wire Line
+	2500 2500 2500 2700
+Wire Wire Line
+	2200 2500 2500 2500
+$Comp
+L Device:R R2
+U 1 1 5FE1C32E
+P 2800 2750
+F 0 "R2" H 2870 2796 50  0000 L CNN
+F 1 "10K" H 2870 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2730 2750 50  0001 C CNN
+F 3 "~" H 2800 2750 50  0001 C CNN
+	1    2800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FE1BA2B
+P 2200 2750
+F 0 "R1" H 2270 2796 50  0000 L CNN
+F 1 "10K" H 2270 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2130 2750 50  0001 C CNN
+F 3 "~" H 2200 2750 50  0001 C CNN
+	1    2200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5FE1B2F7
+P 2800 2500
+F 0 "#PWR02" H 2800 2350 50  0001 C CNN
+F 1 "+5V" H 2815 2673 50  0000 C CNN
+F 2 "" H 2800 2500 50  0001 C CNN
+F 3 "" H 2800 2500 50  0001 C CNN
+	1    2800 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 3000 2    50   Input ~ 0
+LED1_5V
+Text GLabel 2100 3000 0    50   Input ~ 0
+LED1_3V3
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5FE19DD9
+P 2200 2500
+F 0 "#PWR01" H 2200 2350 50  0001 C CNN
+F 1 "+3.3V" H 2215 2673 50  0000 C CNN
+F 2 "" H 2200 2500 50  0001 C CNN
+F 3 "" H 2200 2500 50  0001 C CNN
+	1    2200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L esp01-ws2812b-breakout-rescue:IRFS4127-Transistor_FET Q1
+U 1 1 5FE1865D
+P 2500 2900
+F 0 "Q1" V 2749 2900 50  0000 C CNN
+F 1 "IRFS4127" V 2840 2900 50  0000 C CNN
+F 2 "Custom Mosfets:SOT-23_DS-REVERSED" H 2700 2825 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irfs4127pbf.pdf?fileId=5546d462533600a401535636ee7b2192" H 2500 2900 50  0001 L CNN
+	1    2500 2900
+	0    1    1    0   
+$EndComp
+Text Notes 2800 2100 0    50   ~ 0
+Power conversion for MCU\n- Capacitors based on datasheet
+Text Notes 550  2100 0    50   ~ 0
+Power supply\n- 100uF cap for general decoupling/smoothening
 $EndSCHEMATC

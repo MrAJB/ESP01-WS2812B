@@ -595,7 +595,7 @@ U 1 1 61A8EA8C
 P 6050 2950
 F 0 "J2" H 6130 2992 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 6130 2901 50  0000 L CNN
-F 2 "" H 6050 2950 50  0001 C CNN
+F 2 "custom_terminals:0103-blue-terminal" H 6050 2950 50  0001 C CNN
 F 3 "~" H 6050 2950 50  0001 C CNN
 	1    6050 2950
 	1    0    0    -1  

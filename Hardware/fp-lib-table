@@ -3,4 +3,5 @@
   (lib (name "Custom Terminals")(type KiCad)(uri D:/Data/Development/ESP01-WS2812B/Hardware/custom_components/custom_terminals.pretty)(options "")(descr "Custom terminal footprints"))
   (lib (name "Custom Mosfets")(type KiCad)(uri ${KIPRJMOD}/custom_components/custom_mosfets.pretty)(options "")(descr "Custom mosfet footprints"))
   (lib (name "Custom Fuses")(type KiCad)(uri ${KIPRJMOD}/custom_components/custom_fuses.pretty)(options "")(descr "Custom fuse(holder) footprints"))
+  (lib (name custom_terminals)(type KiCad)(uri ${KIPRJMOD}/custom_components/custom_terminals.pretty)(options "")(descr ""))
 )

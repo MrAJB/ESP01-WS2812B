@@ -151,7 +151,7 @@ Wire Wire Line
 NoConn ~ 7150 1150
 Text GLabel 9050 1050 2    50   Input ~ 0
 DALLAS
-Text GLabel 7150 950  0    50   Input ~ 0
+Text GLabel 9050 1250 2    50   Input ~ 0
 LED1_3V3
 Wire Wire Line
 	9050 950  9500 950 
@@ -182,28 +182,28 @@ $EndComp
 $Comp
 L power:+5V #PWR012
 U 1 1 5FE128C5
-P 5700 2800
-F 0 "#PWR012" H 5700 2650 50  0001 C CNN
-F 1 "+5V" H 5715 2973 50  0000 C CNN
-F 2 "" H 5700 2800 50  0001 C CNN
-F 3 "" H 5700 2800 50  0001 C CNN
-	1    5700 2800
+P 5700 2850
+F 0 "#PWR012" H 5700 2700 50  0001 C CNN
+F 1 "+5V" H 5715 3023 50  0000 C CNN
+F 2 "" H 5700 2850 50  0001 C CNN
+F 3 "" H 5700 2850 50  0001 C CNN
+	1    5700 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 5FE130D4
-P 5700 3100
-F 0 "#PWR013" H 5700 2850 50  0001 C CNN
-F 1 "GND" H 5705 2927 50  0000 C CNN
-F 2 "" H 5700 3100 50  0001 C CNN
-F 3 "" H 5700 3100 50  0001 C CNN
-	1    5700 3100
+P 5700 3050
+F 0 "#PWR013" H 5700 2800 50  0001 C CNN
+F 1 "GND" H 5705 2877 50  0000 C CNN
+F 2 "" H 5700 3050 50  0001 C CNN
+F 3 "" H 5700 3050 50  0001 C CNN
+	1    5700 3050
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
 	600  3750 11100 3750
-Text GLabel 5850 2900 0    50   Input ~ 0
+Text GLabel 5850 2950 0    50   Input ~ 0
 LED1_5V
 $Comp
 L Connector:Screw_Terminal_01x02 J1
@@ -276,21 +276,8 @@ Wire Wire Line
 Wire Wire Line
 	10600 2550 10150 2550
 Connection ~ 10150 2550
-$Comp
-L Connector:Screw_Terminal_01x04 J2
-U 1 1 5FE369E1
-P 6050 2900
-F 0 "J2" H 6130 2892 50  0000 L CNN
-F 1 "Screw_Terminal_01x04" H 6130 2801 50  0000 L CNN
-F 2 "Custom Terminals:0104-blue-terminal" H 6050 2900 50  0001 C CNN
-F 3 "~" H 6050 2900 50  0001 C CNN
-	1    6050 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5850 2800 5700 2800
-Wire Wire Line
-	5700 3100 5850 3100
+	5850 2850 5700 2850
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5FE485BB
@@ -498,7 +485,7 @@ F 3 "~" H 8650 3000 50  0001 C CNN
 	1    8650 3000
 	-1   0    0    1   
 $EndComp
-NoConn ~ 9050 1250
+NoConn ~ 7150 950 
 Wire Wire Line
 	3300 3000 3500 3000
 Wire Wire Line
@@ -602,4 +589,17 @@ Text Notes 2800 2100 0    50   ~ 0
 Power conversion for MCU\n- Capacitors based on datasheet
 Text Notes 550  2100 0    50   ~ 0
 Power supply\n- 100uF cap for general decoupling/smoothening
+$Comp
+L Connector:Screw_Terminal_01x03 J2
+U 1 1 61A8EA8C
+P 6050 2950
+F 0 "J2" H 6130 2992 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 6130 2901 50  0000 L CNN
+F 2 "" H 6050 2950 50  0001 C CNN
+F 3 "~" H 6050 2950 50  0001 C CNN
+	1    6050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3050 5850 3050
 $EndSCHEMATC

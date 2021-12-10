@@ -305,7 +305,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 1350 2550 1350
 Text Notes 550  3700 0    50   ~ 0
-Level shifter for LED data pin 1 and 2 \n- Design is based on: https://www.nxp.com/docs/en/application-note/AN10441.pdf\n- Note that the actual transistor is picked at random, for this PCB, a SI2300DS is used\n- The 470 ohm resistor acts to reduce noise in the data line
+Level shifter for the LED data pin\n- Design is based on: https://www.nxp.com/docs/en/application-note/AN10441.pdf\n- Note that the actual transistor is picked at random, for this PCB, a SI2300DS is used\nThe 470 ohm resistor reduces noise in the data line
 Wire Notes Line
 	5000 3750 5000 500 
 $Comp
